@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.879);
+            height: 85vh;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 10px solid burlywood;
+            border-radius: 10px;
+            padding: 50px 20px;
+        }
+
+        p{
+            color: lightcoral;
+            text-align: center;
+            font-size: larger;
+            padding-bottom: 25px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        button{
+            color: #fffdfd;
+            background-color:lightsalmon;
+            height: 50px;
+            width: 75px;
+            border-radius: 13%;
+            border: 3px solid #db9720;
+            margin: 7px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        button:hover{
+            background-color: rgb(250, 183, 156);
+            transform: scale(1.05);
+        }
+
+        button:active{
+            background-color: rgb(176, 91, 58);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <p> Rock Paper Scissors</p>
+        <div>
+            <button onclick="
+        let computerMove = '';
+        const randomNumber = Math.random();
+        if (randomNumber >= 0 && randomNumber <1/3){
+            computerMove = 'Rock'
+        }else if (randomNumber >= 1/3 && randomNumber <2/3) {
+            computerMove ='Paper'
+        }else if (randomNumber >= 2/3 && randomNumber <1){
+            computerMove ='Scissors'
+        };
+
+        let result = '';
+        if(computerMove === 'Rock'){
+            result = 'TieðŸ˜¶'
+        } else if (computerMove === 'Paper'){
+            result = 'You loseðŸ˜¥'
+        } else if( computerMove === 'Scissors'){
+            result = 'You Win!ðŸ˜Ž'
+        }
+
+        alert(`You picked rock. Computer picked ${ computerMove}. ${result}`)
+    ">ðŸ¥Œ<br>Rock</button>
+
+    <button onclick="
+    let computerMove2 = '';
+        const randomNumber2 = Math.random();
+        if (randomNumber2 >= 0 && randomNumber2 <1/3){
+            computerMove2 = 'Rock'
+        }else if (randomNumber2 >= 1/3 && randomNumber2 <2/3) {
+            computerMove2 ='Paper'
+        }else if (randomNumber2 >= 2/3 && randomNumber2 <1){
+            computerMove2 ='Scissors'
+        };
+
+        let result2 = '';
+        if(computerMove2 === 'Rock'){
+            result2 = 'You WinðŸ˜Ž!'
+        } else if (computerMove2 === 'Paper'){
+            result2 = 'TieðŸ˜¶'
+        } else if( computerMove2 === 'Scissors'){
+            result2 = 'You loseðŸ˜¥'
+        }
+
+        alert(`You picked Paper. Computer picked ${ computerMove2}. ${result2}`)
+        ">ðŸ“ƒ<br>Paper</button>
+   
+   <button onclick="
+        let computerMove3 = '';
+        const randomNumber3 = Math.random();
+        if (randomNumber3 >= 0 && randomNumber3 <1/3){
+            computerMove3 = 'Rock'
+        }else if (randomNumber3 >= 1/3 && randomNumber3 <2/3) {
+            computerMove3 ='Paper'
+        }else if (randomNumber3 >= 2/3 && randomNumber3 <1){
+            computerMove3 ='Scissors'
+        };
+
+        let result3 = '';
+        if(computerMove3 === 'Rock'){
+            result3 = 'You loseðŸ˜¥'
+        } else if (computerMove3 === 'Paper'){
+            result3 = 'You Win!ðŸ˜Ž'
+        } else if( computerMove3 === 'Scissors'){
+            result3 = 'TieðŸ˜¶'
+        }
+
+        alert(`You picked Scissors. Computer picked ${ computerMove3}. ${result3}`)
+   ">âœ‚<br>Scissors</button>
+        </div>
+    </div>
+</body>
+</html>
